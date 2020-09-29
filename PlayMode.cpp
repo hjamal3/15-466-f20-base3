@@ -262,7 +262,7 @@ void PlayMode::update(float elapsed) {
 		}
 		else
 		{
-			for (int i = 0; i < ai.size(); i++)
+			for (size_t i = 0; i < ai.size(); i++)
 			{
 				glm::uvec3 diff = ai[i]->position - cart->position;
 				if (check_dist(diff, attack_radius))
@@ -292,7 +292,7 @@ void PlayMode::update(float elapsed) {
 
 		if (!chase)
 		{
-			for (int i = 0; i < ai.size(); i++)
+			for (size_t i = 0; i < ai.size(); i++)
 			{
 				ai[i]->position += glm::vec3(cos(ai_orientations[i]), sin(ai_orientations[i]), 0) * ai_speed * elapsed;
 				
@@ -304,7 +304,7 @@ void PlayMode::update(float elapsed) {
 		}
 		else
 		{
-			for (int i = 0; i < ai.size(); i++)
+			for (size_t i = 0; i < ai.size(); i++)
 			{
 				ai[i]->position += glm::normalize(glm::vec3(cart->position.x, cart->position.y, 0) - glm::vec3(ai[i]->position.x, ai[i]->position.y, 0)) * ai_speed * elapsed;
 			}
@@ -333,7 +333,7 @@ void PlayMode::update(float elapsed) {
 			}
 		};
 		restrict_inside(cart, (float)arena_radius,cart_radius);
-		for (int i = 0; i < ai.size(); i++)
+		for (size_t i = 0; i < ai.size(); i++)
 		{
 			restrict_inside(ai[i], (float)arena_radius, ai_radius);
 		}
