@@ -1,8 +1,8 @@
-# (TODO: your game's title)
+# Chase
 
-Author: (TODO: your name)
+Author: Haidar Jamal
 
-Design: (TODO: In two sentences or fewer, describe what is new and interesting about your game.)
+Design: You have to try to find the AI to poke if they are making sound. Then you have to run away until the AI gives up.
 
 Screen Shot:
 
@@ -10,9 +10,12 @@ Screen Shot:
 
 How To Play:
 
-(TODO: describe the controls and (if needed) goals/strategy.)
+WASD to move the player. Spacebar to annoy the AI. Run away for 5 seconds.
 
-Sources: (TODO: list a source URL for any assets you did not create yourself. Make sure you have a license for the asset.)
+Sources:  
+Busybody, written by Bryan Teoh: https://freepd.com/music/Busybody.mp3.  
+GoodNightmare, Written by Kevin MacLeod: https://freepd.com/music/Goodnightmare.mp3  
+jabbersynth by: Saltbearer https://freesound.org/people/Saltbearer/sounds/536423/  
 
 This game was built with [NEST](NEST.md).
 
